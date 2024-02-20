@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyToDoList</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container mt-5 p-5 shadow rounded bg-danger-subtle">
+      <header>
+        <div class="row">
+          <div class="col-lg-12">
+            <div
+              class="d-flex align-items-center text-danger-emphasis justify-content-center gap-3"
+            >
+              <i class="fa fa-check bg-body rounded fs-1 p-2"></i>
+              <h1 class="text-decoration-underline">My Todo List</h1>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="add mt-5">
+        <div class="position-relative">
+          <input
+            type="text"
+            id="inputTask"
+            class="form-control-lg form-control p-3"
+          />
+          <div
+            class="date d-flex align-items-center justify-content-center gap-2 w-auto position-absolute"
+          >
+            <input
+              type="date"
+              id="taskDate"
+              name="clenderBTN"
+              id=""
+              class="form-control"
+            />
+            <button
+              class="btn btn-outline-danger"
+              id="btnAdd"
+              onclick="addTask()"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="display mt-5">
+        <div class="row" id="taskContent"></div>
+      </section>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
